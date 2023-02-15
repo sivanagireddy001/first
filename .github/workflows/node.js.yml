@@ -5,7 +5,7 @@ name: first github actions ci/cd
 
 on:
   push:
-    branches: [ "development" ]
+    branches: [ "main" ]
   
 
 jobs:
