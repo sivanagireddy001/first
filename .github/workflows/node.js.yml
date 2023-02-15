@@ -25,7 +25,7 @@ jobs:
       with:
         node-version: 18.X
         
-
-    - run: npm install -g @angular/cli
+    - run: npm start
+    
     - run: npm run build 
     - run: npm test
