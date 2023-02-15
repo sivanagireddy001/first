@@ -26,6 +26,7 @@ jobs:
         node-version: 18
     
     - name: Install dependencies
-      run: npm run build --if-present
+      - run: npm i
+      - run: npm run build --if-present
     
     
