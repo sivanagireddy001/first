@@ -27,5 +27,5 @@ jobs:
         
 
    
-    - run: npm build -c development
+    - run: npm run build -c development
     - run: npm test
