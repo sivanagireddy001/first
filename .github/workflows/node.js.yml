@@ -25,7 +25,7 @@ jobs:
       with:
         node-version: 18.X
         cache: 'npm'
-        cache-dependency-path: first/frontend/package-lock.json
+        cache-dependency-path: './first/frontend/package-lock.json'
 
     - run: npm ci
     - run: npm run build --if-present
