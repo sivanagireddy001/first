@@ -15,7 +15,7 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [18.x]
+        node-version: [14.X, 16.X, 18.x]
         # See supported Node.js release schedule at https://nodejs.org/en/about/releases/
 
     steps:
@@ -23,9 +23,9 @@ jobs:
     - name: set up node.js
       uses: actions/setup-node@v3
       with:
-        node-version: 18.X
-        
-    - run: npm start
+        node-version: 18
     
-    - run: npm run build 
-    - run: npm test
+    - name: Install dependencies
+      run: npm install
+    - name: Run tests
+      run: npm test
