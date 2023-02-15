@@ -21,11 +21,10 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: set up node.js
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18.X
-        cache: 'npm'
-        cache-dependency-path: './first/frontend/package-lock.json'
+      #uses: actions/setup-node@v3
+      #with:
+       # node-version: 18.X
+        
 
     - run: npm ci
     - run: npm run build --if-present
