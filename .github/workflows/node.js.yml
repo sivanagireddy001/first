@@ -27,6 +27,6 @@ jobs:
     
     - name: Install dependencies
       run: npm run build
-      working-directory: ./first/development/frontend/package.json
+      working-directory: ./frontend/package.json
     - name: Run tests
       run: npm test
