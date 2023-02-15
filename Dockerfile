@@ -5,7 +5,6 @@ FROM node:14-alpine
 WORKDIR /app
 
 # Copy the project files to the container
-COPY package*.json ./
 COPY . .
 
 # Install project dependencies
